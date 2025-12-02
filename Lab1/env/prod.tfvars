@@ -6,3 +6,4 @@ region_instance_count = {
     "westus" = 4
     "eastus" = 8
 }
+region_set = ["westus" , "eastus"]  

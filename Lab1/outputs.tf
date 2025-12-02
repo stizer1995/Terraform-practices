@@ -13,3 +13,12 @@ output "suffix" {
 output "instance_count" {
   value = var.instance_count
 }
+
+
+output "primary_region" {
+  value = var.regions[0]
+}
+
+output "priamry_region_instance_count" {
+  value = var.region_instance_count["westus"]
+}

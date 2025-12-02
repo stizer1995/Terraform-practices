@@ -1,22 +1,27 @@
 variable "myapplication" {
-    type = string
+  type = string
+
+  validation {
+    condition     = length(var.myapplication) <=12
+    error_message = "application name must be less or equal to 12 characters"
+  }
 }
 
 variable "environment_name" {
-    type = string
+  type = string
 }
 
 variable "api_key" {
-    type = string
-    sensitive = true
+  type      = string
+  sensitive = true
 }
 
 variable "instance_count" {
-    type = number
+  type = number
 }
 
 variable "enabled" {
-    type = bool
+  type = bool
 }
 
 variable "regions" {
@@ -25,4 +30,8 @@ variable "regions" {
 
 variable "region_instance_count" {
   type = map(string)
+}
+
+variable "region_set" {
+  type = set(string)
 }
