@@ -1,0 +1,8 @@
+environment_name = "prod"
+instance_count = 4
+enabled = false
+regions = ["westus" , "eastus"]
+region_instance_count = {
+    "westus" = 4
+    "eastus" = 8
+}
