@@ -2,7 +2,7 @@ variable "myapplication" {
   type = string
 
   validation {
-    condition     = length(var.myapplication) <=12
+    condition     = length(var.myapplication) <= 12
     error_message = "application name must be less or equal to 12 characters"
   }
 }
@@ -18,6 +18,11 @@ variable "api_key" {
 
 variable "instance_count" {
   type = number
+
+  validation {
+    condition     = var.instance_count >= local.min_noded && var.instance_count <= local.max_nodes && var.instance_count % 2 != 0
+    error_message = "the value must be between 1 and 9 and not odd"
+  }
 }
 
 variable "enabled" {

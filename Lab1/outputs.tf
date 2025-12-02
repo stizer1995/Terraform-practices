@@ -1,9 +1,9 @@
 output "application_name" {
-    value = var.myapplication
+  value = var.myapplication
 }
 
 output "environment_prefix" {
-    value = local.environment_prefix
+  value = local.environment_prefix
 }
 
 output "suffix" {

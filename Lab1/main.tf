@@ -9,8 +9,9 @@ resource "random_string" "suffix" {
 }
 
 
+
 locals {
-  environment_prefix= "${var.myapplication}-${var.environment_name}-${random_string.suffix.result}"
+  environment_prefix = "${var.myapplication}-${var.environment_name}-${random_string.suffix.result}"
 }
 
 

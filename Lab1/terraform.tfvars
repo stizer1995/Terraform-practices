@@ -1,2 +1,2 @@
-myapplication = "sobhanrtuyrtuyrtuyrtuyrturtu"
+myapplication = "sobhan"
 

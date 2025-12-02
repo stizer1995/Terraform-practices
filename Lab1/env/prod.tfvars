@@ -1,9 +1,9 @@
 environment_name = "prod"
-instance_count = 4
-enabled = false
-regions = ["westus" , "eastus"]
+instance_count   = 3
+enabled          = false
+regions          = ["westus", "eastus"]
 region_instance_count = {
-    "westus" = 4
-    "eastus" = 8
+  "westus" = 3
+  "eastus" = 7
 }
-region_set = ["westus" , "eastus"]  
+region_set = ["westus", "eastus"]  
