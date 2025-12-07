@@ -1,0 +1,23 @@
+# Ignore all .terraform folders anywhere in the repo
+**/.terraform/
+
+# Ignore all Terraform state folders
+**/terraform.tfstate.d/
+
+# Ignore state files
+**/*.tfstate
+**/*.tfstate.*
+
+# Ignore sensitive tfvars
+#*.tfvars
+#*.tfvars.json
+
+# Ignore plan files
+**/*.plan
+**/*.tfplan
+
+# Override files (Terraform internal)
+**/override.tf
+**/override.tf.json
+**/*_override.tf
+**/*_override.tf.json
